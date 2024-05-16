@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>CRUD Example</h1>
+    <form id="userForm" action="insert.php" method="POST">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit">Agregar Usuario</button>
+    </form>
+
+    <h2>Usuarios Registrados</h2>
+    <table id="userTable" border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
+        <!-- Aquí se cargarán los datos de la base de datos -->
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
