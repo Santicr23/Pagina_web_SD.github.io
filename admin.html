@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+    <h1>ADMINISTRAR USUARIOS</h1>
+    <form id="userForm" action="insert.php" method="POST">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit" class="action-btn">Agregar Usuario</button>
+    </form>
+
+    <h2>Usuarios Registrados</h2>
+    <table id="userTable" border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+      
+    </table>
+
+    <script src="javascript.js"></script>
+    <br>
+    <br>
+    <br>
+    <a href="index.html" class="btn btn-xl btn-outline-light"><button type="submit" class="action-btn">REGRESAR A LA PANTALLA PRINCIPAL</button></a>
+</body>
+</html>
